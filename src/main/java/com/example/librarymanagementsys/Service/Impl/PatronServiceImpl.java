@@ -67,8 +67,7 @@ public class PatronServiceImpl implements PatronService {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return new ResponseEntity<>("Couldn't update patron", HttpStatus.BAD_REQUEST);
-
+        return new ResponseEntity<>("Couldn't update patron,check your information and try again", HttpStatus.BAD_REQUEST);
     }
 
     @Override
@@ -79,7 +78,7 @@ public class PatronServiceImpl implements PatronService {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return new ResponseEntity<>("Couldn't delete patron", HttpStatus.BAD_REQUEST);
+        return new ResponseEntity<>("Couldn't delete patron,check your information and try again", HttpStatus.BAD_REQUEST);
     }
 }
 
