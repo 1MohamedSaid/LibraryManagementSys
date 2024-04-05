@@ -26,5 +26,5 @@ public class BorrowingRecord {
     private Patron patron;
     private LocalDateTime borrowingDate;
     private LocalDateTime returnDate;
-    //check relations later//
+  
 }
