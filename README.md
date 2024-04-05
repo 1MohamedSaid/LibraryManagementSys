@@ -19,11 +19,11 @@ from the requestMatchers.permitAll() line for properly utilizing JWT authenticat
 
 ## CRUD Operations:
 ###### Book API endpoints:
--GET: "/api/books" --> returns the list of books in library.
--GET: "/api/books/{id}" --> returns the book with the specified id.
--POST: "/api/books" --> adds a book to the library database.
--PUT: "/api/books/{id}" --> updates a book's information with the specified id.
--DELETE: "/api/books/{id}" --> deletes a book with the specified id.
+* GET: "/api/books" --> returns the list of books in library.
+* GET: "/api/books/{id}" --> returns the book with the specified id.
+* POST: "/api/books" --> adds a book to the library database.
+* PUT: "/api/books/{id}" --> updates a book's information with the specified id.
+* DELETE: "/api/books/{id}" --> deletes a book with the specified id.
 
 ###### Patron API endpoints:
 -GET: "/api/patrons" --> returns the list of patrons in the database.
