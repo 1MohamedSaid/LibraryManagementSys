@@ -1,9 +1,9 @@
 # Spring boot Library Management System Api.
 
 ## Models and Database:
-*Books and Patrons with borrowing records.
-*Crud(add, update, delete).
-*MySQL database.
+* Books and Patrons with borrowing records.
+* Crud(add, update, delete).
+* MySQL database.
 
 ## How to use:
 * This API is JWT authentication protected, you need to manually disable JWT authentication by commenting out
