@@ -26,15 +26,15 @@ from the requestMatchers.permitAll() line for properly utilizing JWT authenticat
 * DELETE: "/api/books/{id}" --> deletes a book with the specified id.
 
 ###### Patron API endpoints:
--GET: "/api/patrons" --> returns the list of patrons in the database.
--GET: "/api/patrons/{id}" --> returns the patron with the specified id.
--POST: "/api/patrons" --> adds a patron to the database.
--PUT: "/api/patrons/{id}" --> updates a patrons's information with the specified id.
--DELETE: "/api/patrons/{id}" --> deletes a patron with the specified id.
+* GET: "/api/patrons" --> returns the list of patrons in the database.
+* GET: "/api/patrons/{id}" --> returns the patron with the specified id.
+* POST: "/api/patrons" --> adds a patron to the database.
+* PUT: "/api/patrons/{id}" --> updates a patrons's information with the specified id.
+* DELETE: "/api/patrons/{id}" --> deletes a patron with the specified id.
 
 ###### Borrowing record API endpoints:
--POST: "/api/borrow/{bookId}/patron/{patronId}" --> specified patron borrows the specified book from library.
--PUT: "/api/return/{bookId}/patron/{patronId}" -->returns the borrowed book by the specified patron to the library.
+* POST: "/api/borrow/{bookId}/patron/{patronId}" --> specified patron borrows the specified book from library.
+* PUT: "/api/return/{bookId}/patron/{patronId}" -->returns the borrowed book by the specified patron to the library.
 
 
 
