@@ -6,15 +6,15 @@
 *MySQL database.
 
 ## How to use:
--This API is JWT authentication protected, you need to manually disable JWT authentication by commenting out
+* This API is JWT authentication protected, you need to manually disable JWT authentication by commenting out
 the security filter part in SecurityConfig class and add "/api/patrons" in the requestMatchers.permitAll() line.
 
--Now you can add a patron that can act as an admin after JWT authentication is enabled
+* Now you can add a patron that can act as an admin after JWT authentication is enabled
 by uncommenting the security filter part in SecurityConfig class, and remove the "/api/patrons" part
 from the requestMatchers.permitAll() line for properly utilizing JWT authentication.
 
 ## How to login to the api:
--POST: "/api/login" --> logs in to the database using username and password,
+* POST: "/api/login" --> logs in to the database using username and password,
                         returning a JWT token to be used in further api calls.
 
 ## CRUD Operations:
