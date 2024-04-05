@@ -29,7 +29,7 @@ from the requestMatchers.permitAll() line for properly utilizing JWT authenticat
 * GET: "/api/patrons" --> returns the list of patrons in the database.
 * GET: "/api/patrons/{id}" --> returns the patron with the specified id.
 * POST: "/api/patrons" --> adds a patron to the database.
-* PUT: "/api/patrons/{id}" --> updates a patrons's information with the specified id.
+* PUT: "/api/patrons/{id}" --> updates a patron's information with the specified id.
 * DELETE: "/api/patrons/{id}" --> deletes a patron with the specified id.
 
 ###### Borrowing record API endpoints:
