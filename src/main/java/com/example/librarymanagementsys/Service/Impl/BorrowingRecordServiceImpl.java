@@ -50,7 +50,7 @@ public class BorrowingRecordServiceImpl implements BorrowingRecordService {
     public ResponseEntity<String> returnBook(Long bookId,Long patronId) {
         Patron patron = patronRepo.findById(patronId).orElse(null);
         Book book = bookRepo.findById(bookId).orElse(null);
-        BorrowingRecord borrowingRecord = borrowRepo.findByPatronAndReturnDateIsNull(patron);
+        BorrowingRecord borrowingRecord = borrowRepo.findByBookAndPatronAndReturnDateIsNull(book,patron);
         if(book!=null && patron !=null){
             if (borrowingRecord!=null && book.getBorrowed()) {
                 book.setBorrowed(false);

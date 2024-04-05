@@ -13,7 +13,7 @@ public interface BorrowRepo extends JpaRepository<BorrowingRecord,Long> {
     void deleteByBookId(Long bookId);
     BorrowingRecord findByBook(Book book);
     BorrowingRecord findByPatronId(Long patronId);
-    BorrowingRecord findByPatronAndReturnDateIsNull(Patron patron);
+    BorrowingRecord findByBookAndPatronAndReturnDateIsNull(Book book,Patron patron);
 
 
 }

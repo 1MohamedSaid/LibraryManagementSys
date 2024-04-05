@@ -1,7 +1,6 @@
 package com.example.librarymanagementsys.Service.Impl;
 
 import com.example.librarymanagementsys.Entity.Patron;
-import com.example.librarymanagementsys.Exception.UserNotFoundException;
 import com.example.librarymanagementsys.Repo.PatronRepo;
 import com.example.librarymanagementsys.Service.PatronService;
 import org.springframework.beans.factory.annotation.Autowired;
