@@ -26,6 +26,7 @@ public class Book {
     @Size(min = 3, message = "Author name must be greater than 3 characters")
     private String author;
     private Date publicationYear;
+    @NotEmpty
     private String ISBN;
     private Boolean borrowed = false;
 
