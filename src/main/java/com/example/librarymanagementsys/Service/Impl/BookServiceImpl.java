@@ -42,7 +42,7 @@ public class BookServiceImpl implements BookService {
             book1.setTitle(book.getTitle());
             book1.setAuthor(book.getAuthor());
             book1.setPublicationYear(book.getPublicationYear());
-            book1.setISBN(book.getISBN());
+            book1.setISBN(book.getISBN().toLowerCase());
             book1.setBorrowed(book.getBorrowed());
             bookRepo.save(book1);
             return new ResponseEntity<>("Book added successfully",HttpStatus.CREATED);
@@ -59,7 +59,7 @@ public class BookServiceImpl implements BookService {
             book1.setTitle(book.getTitle());
             book1.setAuthor(book.getAuthor());
             book1.setPublicationYear(book.getPublicationYear());
-            book1.setISBN(book.getISBN());
+            book1.setISBN(book.getISBN().toLowerCase());
             book1.setBorrowed(book.getBorrowed());
             bookRepo.save(book1);
             return new ResponseEntity<>("Book updated successfully",HttpStatus.CREATED);
